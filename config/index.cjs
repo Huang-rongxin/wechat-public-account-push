@@ -29,15 +29,15 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '温大可爱', year: '1998', date: '04-09',
+          type: '*农历生日', name: '温大可爱', year: '1998', date: '04-09',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '温大可爱', year: '1998', date: '05-04',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2022', date: '06-10',
-        },
+//         {
+//           type: '生日', name: '温大可爱', year: '1998', date: '05-04',
+//         },
+//         {
+//           type: '节日', name: '相识纪念日', year: '2022', date: '06-10',
+//         },
       ],
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
@@ -56,7 +56,7 @@ const USER_CONFIG = {
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oqUhz6ABbKBSfGRTig2tcnOpYLMo',
+//       id: 'oqUhz6ABbKBSfGRTig2tcnOpYLMo',
     }
   ],
 

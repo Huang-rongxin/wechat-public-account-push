@@ -52,13 +52,13 @@ const USER_CONFIG = {
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'N8fioAjVOF_fil3sZ-DgQPnOVZywy8cuUo8NUnmxHMg',
+  CALLBACK_TEMPLATE_ID: 'eVV0l-H93i4UKti7z8wMwvl-MwV2xqrKYA4jh_5feec',
 
   CALLBACK_USERS: [
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-//       id: 'oqUhz6ABbKBSfGRTig2tcnOpYLMo',
+      id: 'oqUhz6ABbKBSfGRTig2tcnOpYLMo',
     }
   ],
 

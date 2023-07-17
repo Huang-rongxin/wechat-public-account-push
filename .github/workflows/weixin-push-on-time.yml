@@ -5,9 +5,9 @@ name: weixin-push-on-time
 
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # 每天国际时间 23:30 运行, 即北京时间 7:30 运行
-    - cron: '30 23 * * *'
+    #- cron: '30 23 * * *'
     
 jobs:
   build:
@@ -25,15 +25,15 @@ jobs:
       with:
           ref: 'master'
           
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    #- name: Use Node.js ${{ matrix.node-version }}
+     # uses: actions/setup-node@v3
+     # with:
+        #node-version: ${{ matrix.node-version }}
+        #cache: 'npm'
     - run: npm ci
     - run: npm run dev --if-present
-    env: 
-      APP_ID: ${{secrets.APP_ID}}
-      APP_SECRET: ${{secrets.APP_SECRET}}
-      USER_INFO: ${{secrets.USER_INFO}}
+    #env: 
+      #APP_ID: ${{secrets.APP_ID}}
+      #APP_SECRET: ${{secrets.APP_SECRET}}
+      #USER_INFO: ${{secrets.USER_INFO}}
 
